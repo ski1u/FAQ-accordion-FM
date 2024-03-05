@@ -1,6 +1,6 @@
 @font-face {
     font-family: worksans;
-    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+    src: url(WorkSans-VariableFont_wght.ttf);
 }
 
 * {
@@ -46,7 +46,7 @@ img {
 }
 .title::before {
     content: "";
-    background-image: url(assets/images/icon-star.svg);
+    background-image: url(icon-star.svg);
     width: 40px;
     height: 40px;
     display: inline-block;
