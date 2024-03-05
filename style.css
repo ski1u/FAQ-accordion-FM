@@ -1,0 +1,92 @@
+@font-face {
+    font-family: worksans;
+    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+}
+
+p, h1, h2, h3 {
+    cursor: default;
+    user-select: none;
+}
+
+img {
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+}
+.card {
+    width: 700px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    filter: blur(0.5px);
+    box-shadow: 4px 4px hsla(0, 0%, 40%, 0.3);
+    transition: height 0.1s;
+}
+.title {
+    font-size: 50px;
+    font-family: worksans;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+.title::before {
+    content: "";
+    background-image: url(assets/images/icon-star.svg);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 35px;
+}
+.questions li {
+    list-style-type: none;
+    position: relative;
+}
+.q {
+    font-size: 20px;
+    font-family: worksans;
+    margin-bottom: 30px;
+    font-weight: 600;
+    padding-bottom: 40px;
+    border-bottom: 1px solid hsla(95deg, 5%, 50%, 0.2);
+    flex-grow: 1;
+    width: 100%;
+    transition: all 0.4s
+}
+.q:hover {
+    color: purple;
+    font-size: 24px;
+    cursor: pointer;
+}
+.plus {
+    position: absolute;
+    top: 1%;
+    left: 90%;
+}
+.plus:hover {
+    cursor: pointer;
+}
+.last {
+    border: none;
+}
+
+.desc {
+    font-family: worksans;
+    color: hsla(100deg, 5%, 50%, 0.8);
+    font-weight: 400;
+    margin-bottom: 40px;
+}
